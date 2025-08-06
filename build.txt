@@ -1,0 +1,14 @@
+displayName = Arcadia Mod
+author = Vaema and the Arcadians
+version = 1.0
+homepage = https://discord.gg/4m4Xk6UeGW
+
+hideCode = false
+hideResources = false
+includeSource = true
+
+dllReferences = StructureHelper, NetEasy_v0.1.8, NetSerializer
+modReferences = SubworldLibrary, Luminance
+weakReferences = MonoStereoMod
+
+buildIgnore = .vs\*, .idea\*, *.sln, *.csproj, *.user, *.config, *.md, .git\*, .github\*, obj\*, bin\*, lib\*, LICENSE, README.md, .editorconfig, .gitignore, .gitattributes
