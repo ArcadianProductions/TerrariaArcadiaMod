@@ -1,0 +1,10 @@
+DivineStar: {
+	DisplayName: Astra
+	Tooltip:
+		'''
+		Hold <left> to do an attack combo while also shooting cosmic projectiles
+		Hold <right> to point the sword at your cursor and shoot a giant cosmic deathray
+		Upon enemy contact damage, a supernova will occur
+		[c/81049C:Developer Item: Yaku]
+		'''
+}

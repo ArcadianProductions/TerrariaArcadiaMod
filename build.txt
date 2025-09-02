@@ -1,14 +1,15 @@
 displayName = Arcadia Mod
-author = Vaema and the Arcadians
+author = Yaku and the Arcadians
 version = 1.0
 homepage = https://discord.gg/4m4Xk6UeGW
 
 hideCode = false
 hideResources = false
 includeSource = true
+includePDB = true
 
-dllReferences = StructureHelper, NetEasy_v0.1.8, NetSerializer
-modReferences = SubworldLibrary, Luminance
-weakReferences = MonoStereoMod
+dllReferences = StructureHelper
+modReferences = SubworldLibrary, Luminance, InnoVault
+sortAfter = SubworldLibrary, Luminance, InnoVault
 
-buildIgnore = .vs\*, .idea\*, *.sln, *.csproj, *.user, *.config, *.md, .git\*, .github\*, obj\*, bin\*, lib\*, LICENSE, README.md, .editorconfig, .gitignore, .gitattributes
+buildIgnore = .vs\*, .idea\*, *.user, *.config, *.md, .git\*, .github\*, obj\*, bin\*, *.md, .editorconfig, .gitignore, .gitattributes
