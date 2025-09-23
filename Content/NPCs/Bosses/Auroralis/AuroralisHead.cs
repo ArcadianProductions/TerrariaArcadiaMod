@@ -1,5 +1,7 @@
 ﻿//using Arcadia.Assets.Sounds;
+
 //using Microsoft.Xna.Framework;
+
 //using Terraria;
 //using Terraria.Audio;
 //using Terraria.ID;
@@ -104,7 +106,7 @@
 //        }
 
 //        // If there is no current target, despawn.
-//        if (NPC.target < 0 || NPC.target >= Main.maxPlayers || Target.dead ||
+//        if (NPC.target < 0 || NPC.target == Main.maxPlayers || Target.dead ||
 //            !Target.active || !NPC.WithinRange(Target.Center, 5200f))
 //        {
 //            Despawn();
@@ -127,12 +129,12 @@
 //    {
 //        int groundShakeTime = 300;
 //        int riseUpTime = 240;
-        
+
 //        if (AttackTimer <= groundShakeTime)
 //        {
 //            // Play a rumble sound.
 //            if (AttackTimer == 1f)
-//                SoundEngine.PlaySound(ArcadiaSounds.Rumble);
+//                SoundEngine.PlaySound(ArcadiaSoundRegistry.Rumble);
 
 //            // Stay underneath the target.
 //            NPC.velocity = Vector2.UnitY * -9f;
@@ -149,8 +151,8 @@
 //    public void Despawn()
 //    {
 //        NPC.velocity.X *= 0.985f;
-//        if (NPC.velocity.Y < 26f)
-//            NPC.velocity.Y += 0.4f;
+//        if (NPC.velocity.Y < 25f)
+//            NPC.velocity.Y += 0.45f;
 
 //        if (NPC.timeLeft > 200)
 //            NPC.timeLeft = 200;
@@ -163,12 +165,11 @@
 //    {
 //        int previous = NPC.whoAmI;
 //        int minLength = wormLength;
-
 //        int bodyTypeAIVariable = 0;
+
 //        for (int i = 0; i < minLength + 1; i++)
 //        {
-//            // Fuck you, it's big brain time.
-//            int lol;
+//            int index;
 //            if (i >= 0 && i < minLength)
 //            {
 //                if (i == 0)
@@ -180,18 +181,18 @@
 //                else
 //                    bodyTypeAIVariable = 10;
 
-//                lol = NPC.NewNPC(NPC.GetSource_FromAI(), (int)NPC.Center.X, (int)NPC.Center.Y, bodyType, NPC.whoAmI);
-//                Main.npc[lol].ai[3] = bodyTypeAIVariable;
+//                index = NPC.NewNPC(NPC.GetSource_FromAI(), (int)NPC.Center.X, (int)NPC.Center.Y, bodyType, NPC.whoAmI);
+//                Main.npc[index].ai[3] = bodyTypeAIVariable;
 //            }
 //            else
-//                lol = NPC.NewNPC(NPC.GetSource_FromAI(), (int)NPC.Center.X, (int)NPC.Center.Y, tailType, NPC.whoAmI);
+//                index = NPC.NewNPC(NPC.GetSource_FromAI(), (int)NPC.Center.X, (int)NPC.Center.Y, tailType, NPC.whoAmI);
 
-//            Main.npc[lol].ai[2] = NPC.whoAmI;
-//            Main.npc[lol].realLife = NPC.whoAmI;
-//            Main.npc[lol].ai[1] = previous;
-//            Main.npc[previous].ai[0] = lol;
-//            NetMessage.SendData(MessageID.SyncNPC, -1, -1, null, lol, 0f, 0f, 0f, 0);
-//            previous = lol;
+//            Main.npc[index].ai[2] = NPC.whoAmI;
+//            Main.npc[index].realLife = NPC.whoAmI;
+//            Main.npc[index].ai[1] = previous;
+//            Main.npc[previous].ai[0] = index;
+//            NetMessage.SendData(MessageID.SyncNPC, -1, -1, null, index);
+//            previous = index;
 //        }
 //    }
 

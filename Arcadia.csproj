@@ -6,7 +6,7 @@
 	<!-- References -->
 	<ItemGroup>
 		<!-- Include all DLLs in lib/ -->
-		<Reference Include="lib/*.dll"/>
+		<Reference Include="lib/*.dll" />
 	</ItemGroup>
 
 </Project>

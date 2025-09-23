@@ -1,5 +1,5 @@
 displayName = Arcadia Mod
-author = Yaku and the Arcadians
+author = Astra and the Arcadians
 version = 1.0
 homepage = https://discord.gg/4m4Xk6UeGW
 
