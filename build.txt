@@ -9,7 +9,7 @@ includeSource = true
 includePDB = true
 
 dllReferences = StructureHelper
-modReferences = SubworldLibrary, Luminance, InnoVault
-sortAfter = SubworldLibrary, Luminance, InnoVault
+modReferences = SubworldLibrary, Luminance
+sortAfter = SubworldLibrary, Luminance
 
 buildIgnore = .vs\*, .idea\*, *.user, *.config, *.md, .git\*, .github\*, obj\*, bin\*, *.md, .editorconfig, .gitignore, .gitattributes
