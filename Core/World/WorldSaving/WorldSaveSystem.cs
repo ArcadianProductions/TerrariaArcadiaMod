@@ -16,15 +16,9 @@ public class WorldSaveSystem : ModSystem
         set => bloodbathModeEnabled = value;
     }
 
-    public override void OnWorldLoad()
-    {
-        BloodbathModeEnabled = false;
-    }
+    public override void OnWorldLoad() => BloodbathModeEnabled = false;
 
-    public override void OnWorldUnload()
-    {
-        BloodbathModeEnabled = false;
-    }
+    public override void OnWorldUnload() => BloodbathModeEnabled = false;
 
     public override void SaveWorldHeader(TagCompound tag)
     {

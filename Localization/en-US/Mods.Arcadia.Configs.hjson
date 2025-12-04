@@ -1,0 +1,59 @@
+ArcadiaClientConfig: {
+	DisplayName: Client Config
+	Headers.Gameplay: Gameplay Changes
+
+	Afterimages: {
+		Label: "[i:SteampunkGoggles] Afterimages"
+		Tooltip:
+			'''
+			Enables rendering afterimages for Calamity NPCs, projectiles, etc.
+			Disable to improve performance.
+			'''
+	}
+
+	NewVanillaTextures: {
+		Label: "[i:Paintbrush] New Vanilla Textures"
+		Tooltip:
+			'''
+			Enable this if you want replacements for various vanilla textures.
+			Disable this for compatibility with texture packs.
+			'''
+	}
+}
+
+ArcadiaServerConfig: {
+	DisplayName: Server Config
+	DeniedMessage: You do not have the permission to change this config.
+
+	Headers: {
+		Difficulty: Difficulty Changes
+		Gameplay: Gameplay Changes
+	}
+
+	BossesStopWeather: {
+		Label: Bosses Stop Weather
+		Tooltip:
+			'''
+			When enabled, all bosses will stop weather effects when spawned.
+			Enable if you have performance issues during boss fights.
+			'''
+	}
+
+	BossZen: {
+		Label: Bosses Drastically Reduce Spawn Rates
+		Tooltip:
+			'''
+			All living bosses will drastically reduce the spawn rates of regular enemies.
+			This also prevents the Slime Rain from occurring while a boss is alive.
+			'''
+	}
+
+	RecipeAdditions: {
+		Label: Vanilla Item Recipe Additions
+		Tooltip:
+			'''
+			When enabled, various uncraftable vanilla items will have some ingredients.
+			Disable this if you prefer quality-of-life mod recipe additions only.
+			'''
+	}
+}

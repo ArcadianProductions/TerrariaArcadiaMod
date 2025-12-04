@@ -1,4 +1,4 @@
-# Arcadia
+# Arcadia Mod
 
 ## Information
 The Arcadia Mod for Terraria, using tModLoader as its API.

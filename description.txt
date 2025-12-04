@@ -1,5 +1,3 @@
-Information:
-
 The Arcadia Mod is a new content and overhaul mod that takes on a different approach for Terraria.
 
 This mod is focused on quality over quantity. It was also made to reimagine an old mod back in the early 1.3 days that was never released.
@@ -16,8 +14,8 @@ Here is a simple breakdown list of the content available in Arcadia:
 
 FAQ:
 
-Q: What does this mod support?
+Q: "What does this mod support?"
 A: Arcadia currently supports Calamity, Thorium, and Exxo Avalon Origins.
 
-Q: Are the overhauls configurable?
-A: Yes, because not all of our reworks can be compatible with other mods.
+Q: "Are the overhauls configurable?"
+A: Yes because not all of our reworks can be compatible with other mods.
