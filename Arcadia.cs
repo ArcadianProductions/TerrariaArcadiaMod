@@ -14,7 +14,19 @@ public class Arcadia : Mod
         private set;
     }
 
-    public override void Load() => Instance = this;
+    /// <summary>
+    ///     A variable to tell whether or not debugging is enabled.
+    /// </summary>
+    public static bool DebugMode = false;
+
+    public override void Load()
+    {
+        Instance = this;
+
+        #if DEBUG
+        DebugMode = true;
+        #endif
+    }
 
     public override void Unload() => Instance = null;
 
