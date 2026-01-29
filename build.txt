@@ -9,8 +9,7 @@ includeSource = true
 includePDB = true
 
 dllReferences = StructureHelper
-modReferences = SubworldLibrary, Luminance@1.0.12, Daybreak@2.3.1
-sortAfter = SubworldLibrary, Luminance@1.0.12, Daybreak@2.3.1
-weakReferences = MonoStereoMod
+modReferences = SubworldLibrary, Daybreak@2.3.1
+sortAfter = SubworldLibrary, Daybreak@2.3.1
 
-buildIgnore = .vs\*, .idea\*, *.user, *.config, *.md, .git\*, .github\*, obj\*, bin\*, lib\refs\*, .editorconfig, .gitignore, .gitattributes, LICENSE
+buildIgnore = .tml-build\*, .vs\*, *.tmp, Properties\*, Assets\Effects\Compiler\*, *.csproj, *.user, obj\*, bin\*, *.config, .git\*, .github\*, LICENSE, *.md, .editorconfig, .gitignore, .gitattributes

@@ -24,8 +24,8 @@ public class SnowmanBomber : ModNPC
 		NPC.HitSound = SoundID.NPCHit11;
 		NPC.DeathSound = SoundID.NPCDeath38;
 		NPC.value = Item.buyPrice(0, 0, 4, 7);
-		Banner = Type;
-		BannerItem = ModContent.ItemType<SnowmanBomberBanner>();
+		//Banner = Type;
+		//BannerItem = ModContent.ItemType<SnowmanBomberBanner>();
 	}
 
 	public override void HitEffect(NPC.HitInfo hit)
