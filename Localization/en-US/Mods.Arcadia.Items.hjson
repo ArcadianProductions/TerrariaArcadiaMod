@@ -1,10 +1,45 @@
+AmethystHat: {
+	DisplayName: Amethyst Hat
+	Tooltip: 2% increased magic damage and +20 mana
+}
+
+TopazHat: {
+	DisplayName: Topaz Hat
+	Tooltip: 4% increased magic damage and +20 mana
+}
+
+SapphireHat: {
+	DisplayName: Sapphire Hat
+	Tooltip: 6% increased magic damage and +60 mana
+}
+
+EmeraldHat: {
+	DisplayName: Emerald Hat
+	Tooltip: 8% increased magic damage and +60 mana
+}
+
+AmberHat: {
+	DisplayName: Amber Hat
+	Tooltip: 10% increased mana damage and +80 mana
+}
+
+RubyHat: {
+	DisplayName: Ruby Hat
+	Tooltip: 10% increased mana damage and +80 mana
+}
+
+DiamondHat: {
+	DisplayName: Diamond Hat
+	Tooltip: 12% increased magic damage and +80 mana
+}
+
 DivineStar: {
-	DisplayName: Divine Star
+	DisplayName: Astra's Arcadian Blade
 	Tooltip:
-		'''
-		Hold <left> to do an attack combo while also shooting cosmic projectiles
-		Hold <right> to point the sword at your cursor and shoot a giant cosmic deathray
-		Upon enemy contact damage, a supernova will occur
-		[c/81049C:Developer Item: Astra]
-		'''
+			'''
+			Hold <left> to do an attack combo while also shooting cosmic projectiles
+			Hold <right> to point the sword at your cursor and shoot a giant cosmic deathray
+			Upon enemy contact damage, a supernova will occur
+			[c/81049C:Developer Item: Astra]
+			'''
 }

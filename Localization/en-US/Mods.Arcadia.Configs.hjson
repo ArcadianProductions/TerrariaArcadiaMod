@@ -23,7 +23,7 @@ ArcadiaClientConfig: {
 
 ArcadiaServerConfig: {
 	DisplayName: Server Config
-	DeniedMessage: You do not have the permission to change this config.
+	DeniedMessage: You do not have permission to change this config.
 
 	Headers: {
 		Difficulty: Difficulty Changes
