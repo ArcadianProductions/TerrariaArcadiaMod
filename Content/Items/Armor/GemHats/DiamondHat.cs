@@ -11,7 +11,7 @@ public class DiamondHat : ModItem
     {
         Item.width = 18;
         Item.height = 18;
-        Item.defense = 6;
+        Item.defense = 8;
         Item.value = Item.sellPrice(silver: 12);
         Item.rare = ItemRarityID.Green;
     }
