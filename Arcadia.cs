@@ -1,3 +1,8 @@
+﻿global using static System.MathF;
+global using static Microsoft.Xna.Framework.MathHelper;
+global using static Stella.Core.Utilities.Utilities;
+global using static Arcadia.Core.Utilities.Utilities;
+
 using Terraria.ModLoader;
 
 namespace Arcadia;
@@ -16,7 +21,7 @@ public class Arcadia : Mod
     /// <summary>
     ///     A variable to tell whether or not debugging is enabled.
     /// </summary>
-    public static bool DebugMode = false;
+    public static bool DebugMode;
 
     public override void Load()
     {

@@ -1,7 +1,7 @@
 ﻿using Arcadia.Core.Globals.Players;
 using Terraria;
 
-namespace Arcadia;
+namespace Arcadia.Core.Utilities;
 
 public static partial class Utilities
 {

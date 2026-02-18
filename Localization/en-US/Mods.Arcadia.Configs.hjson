@@ -6,7 +6,7 @@ ArcadiaClientConfig: {
 		Label: "[i:SteampunkGoggles] Afterimages"
 		Tooltip:
 			'''
-			Enables rendering afterimages for Calamity NPCs, projectiles, etc.
+			Enables rendering afterimages for Arcadia NPCs, projectiles, etc.
 			Disable to improve performance.
 			'''
 	}
