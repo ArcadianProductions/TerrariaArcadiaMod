@@ -1,9 +1,4 @@
-﻿global using static System.MathF;
-global using static Microsoft.Xna.Framework.MathHelper;
-global using static Stella.Core.Utilities.Utilities;
-global using static Arcadia.Core.Utilities.Utilities;
-
-using Terraria.ModLoader;
+﻿using Terraria.ModLoader;
 
 namespace Arcadia;
 
@@ -12,7 +7,7 @@ public class Arcadia : Mod
     /// <summary>
     ///     The instance for this mod.
     /// </summary>
-    public static Mod Instance
+    public static Mod? Instance
     {
         get;
         private set;
