@@ -14,7 +14,7 @@ public class Arcadia : Mod
     }
 
     /// <summary>
-    ///     A variable to tell whether or not debugging is enabled.
+    ///     A flag to tell whether or not debugging is enabled.
     /// </summary>
     public static bool DebugMode;
 

@@ -1,5 +1,6 @@
 ﻿//using Arcadia.Core.Utilities;
 //using Microsoft.Xna.Framework;
+//using Stella.Core.Utilities;
 //using Terraria;
 //using Terraria.GameContent.Bestiary;
 //using Terraria.GameContent.Events;
@@ -12,7 +13,6 @@
 //{
 //    public enum LilithState
 //    {
-//        // Summon animation.
 //        SummonAnimation,
 
 //        // Phase one.
@@ -37,18 +37,15 @@
 //        // Desperation phase.
 //        DesperationPhase,
 
-//        // Defeat animation.
 //        DefeatAnimation
 //    }
 
 //    public Player Target => Main.player[NPC.target];
 
-//    public float LifeRatio => Saturate(NPC.life / (float)NPC.lifeMax);
+//    public float LifeRatio => NPC.life / (float)NPC.lifeMax;
 
 //    public const float Phase2LifeRatio = 0.75f;
-
 //    public const float Phase3LifeRatio = 0.5f;
-
 //    public const float Phase4LifeRatio = 0.25f;
 
 //    public override void SetStaticDefaults()
@@ -63,7 +60,7 @@
 //    public override void SetDefaults()
 //    {
 //        NPC.width = NPC.height = 54;
-        
+
 //        NPC.SetLifeMaxByMode(4525000, 4750000, 5000000);
 //        NPC.damage = 325;
 //        NPC.defense = 125;
@@ -78,7 +75,6 @@
 //        NPC.noTileCollide = true;
 //        NPC.lavaImmune = true;
 //        NPC.chaseable = true;
-
 //        NPC.value = Item.buyPrice(platinum: 5);
 //    }
 
@@ -86,7 +82,6 @@
 //    {
 //        bestiaryEntry.Info.AddRange(
 //        [
-//            // Gives a black background.
 //            new MoonLordPortraitBackgroundProviderBestiaryInfoElement(),
 //            new FlavorTextBestiaryInfoElement("Mods.Arcadia.Bestiary.Lilith")
 //        ]);
@@ -94,22 +89,18 @@
 
 //    public override void AI()
 //    {
-//        // Find the nearest target.
 //        if (NPC.target < 0 || NPC.target == Main.maxPlayers || Target.dead || !Target.active)
 //            NPC.TargetClosest();
 
-//        // Ensure to target any other potential players if the current one is too far away.
 //        if (Vector2.Distance(Target.Center, NPC.Center) > 3200f)
 //            NPC.TargetClosest();
 
-//        // Disable weather ambience.
 //        DisableWeatherAmbience();
 
-//        // Prevent Slime Rain events from naturally happening.
 //        if (Main.slimeRain)
 //        {
-//            Main.StopSlimeRain(true);
-//            SyncWorld();
+//            Main.StopSlimeRain();
+//            Utilities.SyncWorld();
 //        }
 
 //        // TODO: The rest of the AI.

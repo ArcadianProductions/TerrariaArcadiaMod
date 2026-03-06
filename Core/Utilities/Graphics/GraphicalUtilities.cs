@@ -6,7 +6,7 @@ namespace Arcadia.Core.Utilities;
 public static partial class Utilities
 {
     /// <summary>
-    /// Calculates perspective matrices for usage by vertex shaders.
+    ///     Calculates perspective matrices for usage by vertex shaders.
     /// </summary>
     /// <param name="viewMatrix">The view matrix.</param>
     /// <param name="projectionMatrix">The projection matrix.</param>
@@ -32,7 +32,7 @@ public static partial class Utilities
         if (Main.LocalPlayer.gravDir == -1f)
             viewMatrix *= Matrix.CreateScale(1f, -1f, 1f) * Matrix.CreateTranslation(0f, height, 0f);
 
-        // And account for the current zoom.
+        // Account for the current zoom.
         viewMatrix *= zoomScaleMatrix;
 
         projectionMatrix = Matrix.CreateOrthographicOffCenter(0f, width * zoom.X, 0f, height * zoom.Y, 0f, 1f) * zoomScaleMatrix;
