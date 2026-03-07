@@ -17,7 +17,7 @@ public class DebugSystem : ModSystem
     {
         orig(self, gameTime);
 
-        if (!Arcadia.DebugMode || Main.playerInventory)
+        if (!Arcadia.Instance.DebugMode || Main.playerInventory)
             return;
 
         string menu = "Debug mode enabled!";

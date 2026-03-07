@@ -26,16 +26,16 @@ public class DebugGlobalItem : GlobalItem
 
     public override void UpdateInventory(Item item, Player player)
     {
-        if (!Arcadia.DebugMode)
+        if (!Arcadia.Instance.DebugMode)
             item.TurnToAir();
     }
 
     public override bool PreDrawInInventory(Item item, SpriteBatch spriteBatch,
-        Vector2 position, Rectangle frame, Color drawColor, Color itemColor, Vector2 origin, float scale) => Arcadia.DebugMode;
+        Vector2 position, Rectangle frame, Color drawColor, Color itemColor, Vector2 origin, float scale) => Arcadia.Instance.DebugMode;
 
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
     {
-        if (!Arcadia.DebugMode)
+        if (!Arcadia.Instance.DebugMode)
         {
             tooltips.Clear();
 
@@ -50,12 +50,12 @@ public class DebugGlobalItem : GlobalItem
 
     public override void Update(Item item, ref float gravity, ref float maxFallSpeed)
     {
-        if (!Arcadia.DebugMode)
+        if (!Arcadia.Instance.DebugMode)
             item.TurnToAir();
     }
 
-    public override bool CanPickup(Item item, Player player) => Arcadia.DebugMode;
+    public override bool CanPickup(Item item, Player player) => Arcadia.Instance.DebugMode;
 
     public override bool PreDrawInWorld(Item item, SpriteBatch spriteBatch, Color lightColor, Color alphaColor,
-        ref float rotation, ref float scale, int whoAmI) => Arcadia.DebugMode;
+        ref float rotation, ref float scale, int whoAmI) => Arcadia.Instance.DebugMode;
 }

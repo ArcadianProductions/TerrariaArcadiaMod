@@ -7,7 +7,7 @@ public class Arcadia : Mod
     /// <summary>
     ///     The instance for this mod.
     /// </summary>
-    public static Mod Instance
+    public static Arcadia Instance
     {
         get;
         private set;
@@ -16,7 +16,7 @@ public class Arcadia : Mod
     /// <summary>
     ///     A flag to tell whether or not debugging is enabled.
     /// </summary>
-    public static bool DebugMode;
+    public bool DebugMode;
 
     public override void Load()
     {
