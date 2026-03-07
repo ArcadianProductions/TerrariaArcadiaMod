@@ -45,12 +45,12 @@ public sealed class GeneralParticleHandler : ModSystem
     {
         Type baseParticleType = typeof(Particle);
 #pragma warning disable CS0618 // Type or member is obsolete.
-        TerraduxUtils.IterateEveryModsTypes<Particle>(action: type =>
+        ArcadiaUtils.IterateEveryModsTypes<Particle>(action: type =>
         {
             int ID = particleIDsByTypes.Count; // Get the ID of the particle.
             particleIDsByTypes[type] = ID;
 
-            // 'UnintializedObject' is allowed to use here as it's only read for Texture string Property
+            // 'UnintializedObject' is allowed to use here, as it's only read for the texture string property.
             // Do NOT EVER use its instance as they are literally uninitialized.
             // It might cause unintended behaviour if we do that.
             Particle instance = (Particle)RuntimeHelpers.GetUninitializedObject(type);
