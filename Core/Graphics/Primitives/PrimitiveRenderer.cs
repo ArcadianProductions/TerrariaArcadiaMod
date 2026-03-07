@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+
+using Arcadia.Core.Utilities;
+
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+
 using Terraria;
 using Terraria.Graphics.Shaders;
 using Terraria.ModLoader;
@@ -199,7 +203,7 @@ public sealed class PrimitiveRenderer : ModSystem
         if (MainSettings.Pixelate || MainSettings.UseUnscaledMatrices)
             CalcuatePixelatedPerspectiveMatrices(out view, out projection);
         else
-            Utilities.CalculatePerspectiveMatricies(out view, out projection);
+            ArcadiaUtils.CalculatePerspectiveMatricies(out view, out projection);
 
         var shaderToUse = MainSettings.Shader ?? GameShaders.Misc["CalamityMod:StandardPrimitiveShader"];
         shaderToUse.Shader.Parameters["uWorldViewProjection"].SetValue(view * projection);

@@ -3,7 +3,7 @@ using Terraria;
 
 namespace Arcadia.Core.Utilities;
 
-public static partial class Utilities
+public static partial class ArcadiaUtils
 {
     /// <summary>
     ///     Calculates perspective matrices for usage by vertex shaders.

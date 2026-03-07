@@ -7,7 +7,7 @@ public class Arcadia : Mod
     /// <summary>
     ///     The instance for this mod.
     /// </summary>
-    public static Mod? Instance
+    public static Mod Instance
     {
         get;
         private set;

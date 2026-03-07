@@ -1,6 +1,9 @@
 ArcadiaClientConfig: {
 	DisplayName: Client Config
-	Headers.Gameplay: Gameplay Changes
+
+	Headers: {
+		Graphics: Graphics
+	}
 
 	Afterimages: {
 		Label: "[i:SteampunkGoggles] Afterimages"
@@ -17,6 +20,17 @@ ArcadiaClientConfig: {
 			'''
 			Enable this if you want replacements for various vanilla textures.
 			Disable this for compatibility with texture packs.
+			'''
+	}
+
+	ParticleLimit: {
+		Label: "[i:FragmentStardust] Max Particle Limit"
+		Tooltip:
+			'''
+			Sets the maximum of particle effects that can exist at once.
+			Particles are separate from dust and gores.
+			Turn down to improve performance.
+			[c/F05A5A:Turning this below 1000 may cause some things to not display correctly.]
 			'''
 	}
 }

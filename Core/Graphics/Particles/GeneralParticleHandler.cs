@@ -1,11 +1,17 @@
-﻿using Arcadia.Core.Graphics.DrawLayers;
+﻿using Arcadia.Core.Configuration;
+using Arcadia.Core.Graphics.DrawLayers;
+using Arcadia.Core.Graphics.Pixelation;
+using Arcadia.Core.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+
 using ReLogic.Content;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+
 using Terraria;
 using Terraria.ModLoader;
 
@@ -121,7 +127,7 @@ public sealed class GeneralParticleHandler : ModSystem
         if (Main.gamePaused || Main.dedServ || activeParticles == null)
             return;
 
-        if (activeParticles.Count >= TerraduxClientConfig.Instance.ParticleLimit && !particle.Important)
+        if (activeParticles.Count >= ArcadiaClientConfig.Instance.ParticleLimit && !particle.Important)
             return;
 
         particle.Pixelate = pixelate;
@@ -209,7 +215,7 @@ public sealed class GeneralParticleHandler : ModSystem
         if (Main.dedServ || activeParticles == null)
             return 0;
 
-        return TerraduxClientConfig.Instance.ParticleLimit - activeParticles.Count();
+        return ArcadiaClientConfig.Instance.ParticleLimit - activeParticles.Count;
     }
 
     /// <summary>
