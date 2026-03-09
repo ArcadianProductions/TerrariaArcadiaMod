@@ -2,4 +2,14 @@
 
 ## Information
 The Arcadia Mod for Terraria, using tModLoader as its API.
-The mod consists of new content and overhauls to the base game.
+It is a vanilla-style mod that focuses on adding new content that fits well with the base game.
+
+## Developers
+- Astra: Owner, Programmer
+
+## Special Thanks
+- Lune, for contributing some sprites.
+- The Calamity Team, for allowing use of their code and inspiring the mod.
+- Avalon and Thorium Teams, for inspiring the mod.
+- The tModLoader API developers, for creating the API.
+- Re-Logic, for creating Terraria.
