@@ -15,6 +15,6 @@ public class Shadowflame : ModItem
         Item.height = 20;
         Item.maxStack = 9999;
         Item.value = Item.sellPrice(silver: 3);
-        Item.rare = ItemRarityID.Pink;
+        Item.rare = ItemRarityID.LightRed;
     }
 }

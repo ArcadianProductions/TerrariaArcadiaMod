@@ -14,6 +14,7 @@ public class FlowerofDeath : ModItem
         Item.DamageType = DamageClass.Magic;
         Item.autoReuse = true;
         Item.shoot = ModContent.ProjectileType<BouncyShadowflame>();
+        Item.rare = ItemRarityID.LightRed;
     }
 
     public override void AddRecipes()
