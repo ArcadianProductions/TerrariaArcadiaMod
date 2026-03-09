@@ -17,6 +17,7 @@ public class BouncyShadowflame : ModProjectile
 
     public override void AI()
     {
+        // TODO: Ensure to remove the regular fire dust that this projectile emits as well.
         for (int i = 0; i < 2; i++)
         {
             int shadow = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, DustID.Shadowflame, 0f, 0f, 100, default, 0.8f);
