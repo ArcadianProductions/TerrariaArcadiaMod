@@ -1,9 +1,6 @@
 ArcadiaClientConfig: {
 	DisplayName: Client Config
-
-	Headers: {
-		Graphics: Graphics
-	}
+	Headers.Graphics: Graphics
 
 	Afterimages: {
 		Label: "[i:SteampunkGoggles] Afterimages"

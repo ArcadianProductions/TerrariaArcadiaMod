@@ -33,16 +33,6 @@ DiamondHat: {
 	Tooltip: 12% increased magic damage and +80 mana
 }
 
-DivineStar: {
-	DisplayName: Astra's Arcadian Blade
-	Tooltip:
-			'''
-			Shoots cosmic beams and stars
-			Upon enemy contact damage, a supernova will occur
-			[c/81049C:Developer Item: Astra]
-			'''
-}
-
 TheLastFlight: {
 	DisplayName: The Last Flight
 	Tooltip: ""
@@ -56,4 +46,9 @@ FlowerofDeath: {
 Shadowflame: {
 	DisplayName: Shadowflame
 	Tooltip: ""
+}
+
+Shadethrower: {
+	DisplayName: Shadethrower
+	Tooltip: Releases a burst of shadow flames
 }
