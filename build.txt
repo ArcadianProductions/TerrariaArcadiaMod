@@ -8,7 +8,7 @@ includeSource = true
 includePDB = true
 
 dllReferences = StructureHelper
-modReferences = SubworldLibrary, Stella, Daybreak
-sortAfter = SubworldLibrary, Stella, Daybreak
+modReferences = SubworldLibrary, Daybreak
+sortAfter = SubworldLibrary, Daybreak
 
-buildIgnore = .tml-build\*, .vs\*, *.tmp, Properties\*, Assets\Effects\Compiler\*, *.csproj, *.user, obj\*, bin\*, *.config, .git\*, .github\*, LICENSE, *.md, .editorconfig, .gitignore, .gitattributes
+buildIgnore = .vs\*, Properties\*, Assets\Effects\Compiler\*, *.csproj, *.user, obj\*, bin\*, *.config, .git\*, .github\*, LICENSE, *.md, .editorconfig, .gitignore, .gitattributes
