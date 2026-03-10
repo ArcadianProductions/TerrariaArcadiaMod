@@ -6,7 +6,7 @@ namespace Arcadia.Core.Utilities;
 public static partial class ArcadiaUtils
 {
     /// <summary>
-    ///     Syncs world changes on a server.
+    ///     Syncs world updates on a server.
     /// </summary>
     public static void SyncWorld()
     {

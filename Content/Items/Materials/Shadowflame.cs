@@ -6,8 +6,11 @@ namespace Arcadia.Content.Items.Materials;
 
 public class Shadowflame : ModItem
 {
-    public override void SetStaticDefaults() =>
+    public override void SetStaticDefaults()
+    {
         Item.ResearchUnlockCount = 30;
+        ItemID.Sets.ItemNoGravity[Type] = true;
+    }
 
     public override void SetDefaults()
     {
