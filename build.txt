@@ -9,4 +9,4 @@ includePDB = true
 
 dllReferences = StructureHelper
 
-buildIgnore = .vs\*, Properties\*, *.csproj, *.user, obj\*, bin\*, *.config, .git\*, .github\*, LICENSE, *.md, .editorconfig, .gitignore, .gitattributes
+buildIgnore = .tml-build\*, .vs\*, Properties\*, *.csproj, *.user, obj\*, bin\*, *.config, .git\*, .github\*, LICENSE, *.md, .editorconfig, .gitignore, .gitattributes
