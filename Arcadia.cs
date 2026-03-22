@@ -1,31 +1,26 @@
-﻿using Terraria.ModLoader;
+﻿using log4net;
+using Terraria.ModLoader;
 
 namespace Arcadia;
 
 public class Arcadia : Mod
 {
-    /// <summary>
-    ///     The instance for this mod.
-    /// </summary>
-    public static Arcadia Instance
-    {
-        get;
-        private set;
-    }
+    private static Arcadia? instance;
+    public static Arcadia Instance => instance ??= ModContent.GetInstance<Arcadia>();
 
-    /// <summary>
-    ///     A flag to tell whether or not debugging is enabled.
-    /// </summary>
+    // This should not be named "Logger," as it hides the instance property "Logger."
+    internal static ILog Log => Instance.Logger;
+
     public bool DebugMode;
 
     public override void Load()
     {
-        Instance = this;
+        instance = this;
 
         #if DEBUG
         DebugMode = true;
         #endif
     }
 
-    public override void Unload() => Instance = null;
+    public override void Unload() => instance = null;
 }

@@ -1,6 +1,9 @@
 ArcadiaClientConfig: {
-	DisplayName: Client Config
-	Headers.Graphics: Graphics
+	DisplayName: Client Configuration
+
+	Headers: {
+        Graphics: Graphics
+    }
 
 	Afterimages: {
 		Label: "[i:SteampunkGoggles] Afterimages"
@@ -33,12 +36,12 @@ ArcadiaClientConfig: {
 }
 
 ArcadiaServerConfig: {
-	DisplayName: Server Config
+	DisplayName: Server Configuration
 	DeniedMessage: You do not have permission to change this config.
 
 	Headers: {
-		Difficulty: Difficulty Changes
-		Gameplay: Gameplay Changes
+		Difficulty: Difficulty
+		Gameplay: Gameplay
 	}
 
 	BossesStopWeather: {
@@ -51,7 +54,7 @@ ArcadiaServerConfig: {
 	}
 
 	BossZen: {
-		Label: Bosses Drastically Reduce Spawn Rates
+		Label: Bosses Reduce Spawn Rates
 		Tooltip:
 			'''
 			All living bosses will drastically reduce the spawn rates of regular enemies.

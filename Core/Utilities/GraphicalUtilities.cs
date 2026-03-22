@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
 
-namespace Arcadia.Core.Utilities;
+namespace Arcadia;
 
 public static partial class ArcadiaUtils
 {
@@ -22,7 +22,7 @@ public static partial class ArcadiaUtils
         int width = Main.instance.GraphicsDevice.Viewport.Width;
         int height = Main.instance.GraphicsDevice.Viewport.Height;
 
-        // Get a matrix that aims towards the Z axis (these calculations are relative to a 2D world).
+        // Get a matrix that aims towards the Z-axis (these calculations are relative to a 2D world).
         viewMatrix = Matrix.CreateLookAt(Vector3.Zero, Vector3.UnitZ, Vector3.Up);
 
         // Offset the matrix to the appropriate position.

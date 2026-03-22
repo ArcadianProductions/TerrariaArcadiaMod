@@ -5,7 +5,7 @@ using System.Linq;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Core;
 
-namespace Arcadia.Core.Utilities;
+namespace Arcadia;
 
 public static partial class ArcadiaUtils
 {

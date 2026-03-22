@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.ID;
 
-namespace Arcadia.Core.Utilities;
+namespace Arcadia;
 
 public static partial class ArcadiaUtils
 {
